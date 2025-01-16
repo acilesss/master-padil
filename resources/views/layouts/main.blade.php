@@ -38,20 +38,27 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script>
         $(document).ready(function() {
             $('#datatable1').DataTable({
-                "order": [[ 0, "desc" ]]
+                "order": [
+                    [0, "desc"]
+                ]
             });
 
             $('#datatable2').DataTable({
-                "order": [[ 0, "desc" ]]
+                "order": [
+                    [0, "desc"]
+                ]
             });
         });
     </script>
 
     @livewireScripts
+    @yield('js')
 </body>
 
 </html>

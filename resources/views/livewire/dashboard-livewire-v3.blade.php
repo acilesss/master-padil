@@ -1,5 +1,5 @@
 <div class="row mb-3" wire:poll.1s>
-    <div class="col-sm-6 mb-4">
+    <div class="col-sm-6">
         <div class="card">
             <div class="card-body p-3">
                 <div class="row">
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="col-sm-6 mb-4">
+    <div class="col-sm-6">
         <div class="card">
             <div class="card-body p-3">
                 <div class="row">

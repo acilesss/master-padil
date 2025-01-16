@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\DbRealtime;
 use App\Models\DbRealtime2;
 
@@ -10,11 +11,14 @@ class SensorController extends Controller
 {
     public function store(Request $request)
     {
+        $biaya = 1444;
+
         DbRealtime::create([
             'r1_arus' => $request->r1_arus,
             'r1_tegangan' => $request->r1_tegangan,
             'r1_daya' => $request->r1_daya,
             'r1_pengguna' => $request->r1_pengguna,
+            'biaya' => $request->r1_pengguna * $biaya
         ]);
 
         return response()->json(['message' => 'Data Berhasil Dikirim!'], 200);
@@ -22,11 +26,14 @@ class SensorController extends Controller
 
     public function store2(Request $request)
     {
+        $biaya = 1444;
+
         DbRealtime2::create([
             'r2_arus' => $request->r2_arus,
             'r2_tegangan' => $request->r2_tegangan,
             'r2_daya' => $request->r2_daya,
             'r2_pengguna' => $request->r2_pengguna,
+            'biaya' => $request->r1_pengguna * $biaya
         ]);
 
         return response()->json(['message' => 'Data Berhasil Dikirim!'], 200);
