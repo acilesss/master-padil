@@ -11,19 +11,19 @@
                                 <th>Arus (A)</th>
                                 <th>Tegangan (V)</th>
                                 <th>Daya (W)</th>
-                                <th>Penggunaan (kWh)</th>
-                                <th>Delay (ms)</th>
+                                <th>Energi (kWh)</th>
+                                <th>Penggunaan (Rp.)</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($data as $item)
                                 <tr>
-                                    <td>{{ carbon\Carbon::parse($item->created_at)->format('d/m/Y H:i:s') }}</td>
+                                    <td>{{ carbon\Carbon::parse($item->created_at)->locale('id')->format('d/m/Y H:i:s') }}</td>
                                     <td>{{ $item->r1_arus }}</td>
                                     <td>{{ $item->r1_tegangan }}</td>
                                     <td>{{ $item->r1_daya }}</td>
                                     <td>{{ $item->r1_pengguna }}</td>
-                                    <td>-</td>
+                                    <td>Rp. {{ number_format($item->r1_pengguna * 1000, 2, ',', '.') }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

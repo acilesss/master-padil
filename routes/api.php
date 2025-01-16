@@ -18,4 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/sensor', [App\Http\Controllers\SensorController::class, 'store']);
+Route::post('/sensor_r1', [App\Http\Controllers\SensorController::class, 'store']);
+Route::post('/sensor_r2', [App\Http\Controllers\SensorController::class, 'store2']);

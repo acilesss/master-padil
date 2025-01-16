@@ -24,4 +24,5 @@
 
     @livewire('dashboard-livewire')
     @livewire('dashboard-livewire-v2')
+    @livewire('dashboard-livewire-v3')
 @endsection

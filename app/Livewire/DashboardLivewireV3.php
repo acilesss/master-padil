@@ -6,7 +6,7 @@ use App\Models\DbRealtime;
 use App\Models\DbRealtime2;
 use Livewire\Component;
 
-class DashboardLivewire extends Component
+class DashboardLivewireV3 extends Component
 {
     public $data;
     public $data2;
@@ -16,7 +16,7 @@ class DashboardLivewire extends Component
         $this->data = DbRealtime::orderBy('created_at', 'DESC')->first();
         $this->data2 = DbRealtime2::orderBy('created_at', 'DESC')->first();
 
-        return view('livewire.dashboard-livewire', [
+        return view('livewire.dashboard-livewire-v3', [
             'data' => $this->data,
             'data2' => $this->data2
         ]);

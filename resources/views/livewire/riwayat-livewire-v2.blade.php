@@ -11,8 +11,8 @@
                                 <th>Arus (A)</th>
                                 <th>Tegangan (V)</th>
                                 <th>Daya (W)</th>
-                                <th>Penggunaan (kWh)</th>
-                                <th>Delay (ms)</th>
+                                <th>Energi (kWh)</th>
+                                <th>Penggunaan (Rp.)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -23,7 +23,7 @@
                                     <td>{{ $item->r2_tegangan }}</td>
                                     <td>{{ $item->r2_daya }}</td>
                                     <td>{{ $item->r2_pengguna }}</td>
-                                    <td>-</td>
+                                    <td>Rp. {{ number_format($item->r2_pengguna * 1000, 2, ',', '.') }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

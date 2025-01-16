@@ -51,7 +51,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Arus 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r2_arus }} A
+                                {{ $data2->r2_arus }} A
                             </h5>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Tegangan 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r2_tegangan }} V
+                                {{ $data2->r2_tegangan }} V
                             </h5>
                         </div>
                     </div>
