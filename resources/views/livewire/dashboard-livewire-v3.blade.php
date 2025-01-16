@@ -7,7 +7,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Pengguna 1</p>
                             <h5 class="font-weight-bolder">
-                                Rp. {{ number_format($data->r1_pengguna * 1000, 2, ',', '.') }}
+                                Rp. {{ number_format($data->biaya ?? 0 , 2, ',', '.') }}
                             </h5>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Pengguna 2</p>
                             <h5 class="font-weight-bolder">
-                                Rp. {{ number_format($data2->r2_pengguna * 1000, 2, ',', '.') }}
+                                Rp. {{ number_format($data2->biaya ?? 0 , 2, ',', '.') }}
                             </h5>
                         </div>
                     </div>

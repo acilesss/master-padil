@@ -7,7 +7,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Arus 1</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r1_arus }} A
+                                {{ $data->r1_arus ?? 0 }} A
                             </h5>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Tegangan 1</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r1_tegangan }} V
+                                {{ $data->r1_tegangan ?? 0}} V
                             </h5>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Arus 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data2->r2_arus }} A
+                                {{ $data2->r2_arus ?? 0 }} A
                             </h5>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Tegangan 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data2->r2_tegangan }} V
+                                {{ $data2->r2_tegangan ?? 0 }} V
                             </h5>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Daya 1</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r1_daya }} kW
+                                {{ $data->r1_daya ?? 0}} kW
                             </h5>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Energi 1</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data->r1_pengguna }} kWh
+                                {{ $data->r1_pengguna ?? 0 }} kWh
                             </h5>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">daya 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data2->r2_daya }} kW
+                                {{ $data2->r2_daya ?? 0 }} kW
                             </h5>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="numbers">
                             <p class="text-sm mb-0 text-uppercase font-weight-bold">Energi 2</p>
                             <h5 class="font-weight-bolder">
-                                {{ $data2->r2_pengguna }} kWh
+                                {{ $data2->r2_pengguna ?? 0 }} kWh
                             </h5>
                         </div>
                     </div>
